@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco Nexus</title>
+    <title>Banco Nexus - Login</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
     <div class="barra">
         <div class="logo">Banco Nexus</div>
-        
         <nav class="menu">
             <a href="#">Início</a>
             <a href="#">Serviço</a>
@@ -24,14 +19,13 @@
 
     <div class="login-box">
         <h2>Login</h2>
-        <form>
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="usuario" cpf>
-            
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" required>
-            <button href="/banco/banco.html" type="submit">Entrar</button>
-            <a href="#" class="forgot-password">Esqueci a minha senha</a>
+        <form id="formLogin">
+            <label for="cpfLogin">CPF</label>
+            <input type="text" id="cpfLogin" required>
+            <label for="senhaLogin">Senha</label>
+            <input type="password" id="senhaLogin" required>
+            <button type="submit" class="botao">Entrar</button>
+            <a href="cadastro.html" class="forgot-password">Não tenho conta</a>
         </form>
     </div>
 

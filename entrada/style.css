@@ -1,26 +1,28 @@
 body {
-    font-family: "Montserrat";
-    background-color: #e5e7eb; /* cinza claro elegante */
+    font-family: "Montserrat", sans-serif;
+    background-color: #e5e7eb;
+    margin: 0;
+    padding: 0;
 }
 
 .barra {
-    background-color: #000000ff;
+    background-color: #000;
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     right: 0;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Corrigido */
+    justify-content: space-between;
     padding: 0 40px;
+    z-index: 100;
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    margin-left: 20px;
 }
 
 .menu a {
@@ -28,7 +30,6 @@ body {
     text-decoration: none;
     margin-left: 50px;
     font-size: 1.2rem;
-    font-family: "Montserrat", "Playwrite MX Guides", sans-serif; /* Corrigido */
 }
 
 .login-box {
@@ -40,12 +41,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px; /* 32 pixels de espaço interno em todos os lados */
+    padding: 32px;
 }
 
 .login-box h2 {
     margin-bottom: 24px;
-    font-family: "Montserrat", "Playwrite MX Guides", sans-serif;
     font-size: 1.6em;
 }
 
@@ -57,26 +57,33 @@ body {
 
 .login-box input {
     width: 100%;
-    padding: 3px;
+    padding: 8px;
     margin-bottom: 24px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000;
     border-radius: 8px;
     font-size: 1em;
 }
 
 .login-box button {
-    width: 30%;
+    width: 100%;
+    padding: 10px;
     border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #333;
 }
 
 .forgot-password {
     color: black;
     text-decoration: underline;
-    font-size: 0.90em;
-    margin-top: 50px;
-    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
     display: block;
     text-align: center;
+    cursor: pointer;
 }
