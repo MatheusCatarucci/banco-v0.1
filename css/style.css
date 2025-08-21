@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #e5e7eb;
+    background: #FFFFF url("img/background-main.jpg" no-repeat right top fixed)
     margin: 0;
     padding: 0;
 }
